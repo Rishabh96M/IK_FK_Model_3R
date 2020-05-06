@@ -1,4 +1,14 @@
 function [] = plot_transformation_frame(f)
+%{
+DESCRIPTION : Plots trasformation frame on the graph.
+
+INPUTS : f = transformation matrix
+
+DEVELOPED BY : Rishabh Mukund
+    EMail ID : rishabh.m96@gmail.com
+    LinkedIn : https://www.linkedin.com/in/rishabh-mukund-2a3340140/
+    GitHub   : https://github.com/Rishabh96M
+%}
 Rx=f(:,1);
 Ry=f(:,2);
 Rz=f(:,3);

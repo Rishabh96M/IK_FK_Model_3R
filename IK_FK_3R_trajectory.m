@@ -1,20 +1,29 @@
+%{
+DESCRIPTION : Calculates the IK for a trajectory and performs FK to plot it.
+
+DEVELOPED BY : Rishabh Mukund
+    EMail ID : rishabh.m96@gmail.com
+    LinkedIn : https://www.linkedin.com/in/rishabh-mukund-2a3340140/
+    GitHub   : https://github.com/Rishabh96M
+%}
+
 clear all;
-L=[47.3,63.6,100];  %for right -47.3,63.6,130 
+L=[47.3,63.6,100];  %Vector for link lengths 
 
 %[X,Y,Z] = circle;
-[X,Y,Z] = trag1(60,30,0,133,100);
+[X,Y,Z] = trag(60,30,10,133,100); %Computing the trajectory
 %[X,Y,Z] = rpy(157,10);
 %[X,Y,Z] = circle;
-%len = length(X);
 
-Y = Y + L(1);
+Y = Y + L(1);  %adding offset in Y axis
+
 %executing trajectory
 for i=1:length(Z)
     x = X(i);   
     z = Z(i);
     y = Y(i);
-    [JA] = IK_2M(x,y,z,L);
-    dmt = [-1 -1 -1];
+    [JA] = IK_3R(x,y,z,L); %Calculating Joint Angles
+    dmt = [-1 -1 -1];  %Inverting the direction of rotaation of the joints repectively
     JA = JA.*dmt;
     joint1_val = JA(1);       
     joint2_val = JA(2);
