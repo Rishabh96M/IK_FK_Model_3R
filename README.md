@@ -5,12 +5,13 @@ Inverse Kinematics model of a system having 1 roll motor and 2 pitch motors on M
 Matlab R2015a or above
 
 ### Getting Started
-Open the IK_FK_3R_trajectory.m function
+Open the IK_FK_3R_trajectory.m function, it is ready to run.
+
 
 ```
 11. L=[47.3,63.6,100];  %Vector for link lengths 
 ```
-change the link lengths vector (L vector) according yo your requirments. 
+You change the link lengths vector according yo your requirments. 
 
 
 ```
