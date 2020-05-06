@@ -1,4 +1,4 @@
-function [x,y,z] = trag1(a,b1,b2,h,s)
+function [x,y,z] = trag(a,b1,b2,h,s)
 
 % a*2 = step length
 % b1 = step height
