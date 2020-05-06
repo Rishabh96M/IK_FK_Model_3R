@@ -1,4 +1,4 @@
-function [T] = IK_2M(x1,y1,z1,L)
+function [T] = IK_3R(x1,y1,z1,L)
 
 %(x1,y1,z1) = end effector point
 %L = vector of link lengths
