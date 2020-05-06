@@ -10,10 +10,7 @@ DEVELOPED BY : Rishabh Mukund
 clear all;
 L=[47.3,63.6,100];  %Vector for link lengths 
 
-%[X,Y,Z] = circle;
 [X,Y,Z] = trag(60,30,10,133,100); %Computing the trajectory
-%[X,Y,Z] = rpy(157,10);
-%[X,Y,Z] = circle;
 
 Y = Y + L(1);  %adding offset in Y axis
 
