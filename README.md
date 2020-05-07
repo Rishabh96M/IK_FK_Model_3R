@@ -1,4 +1,4 @@
-# IK_Model_3R
+# IK_FK_Model_3R
 Inverse Kinematics and Forward Kinematics model of a system having 1 roll motor and 2 pitch motors on MATLAB. Calculates all the angles for a given locus or trajectory of the end effector. You can also visualize it on a graph.
 
 ### Requirments
