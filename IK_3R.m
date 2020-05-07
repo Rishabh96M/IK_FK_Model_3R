@@ -19,7 +19,7 @@ l1=L(1);
 l2=L(2);   
 l3=L(3);
 
-y = y1 - l1; 
+y = y1 - l1; %diplacement in y axis
 x = x1;
 t1 = atan(y/z1);
 z = -sqrt((y^2)+(z1^2)) + l1*sin(t1); %Compensation for roll motor in yz plane  
