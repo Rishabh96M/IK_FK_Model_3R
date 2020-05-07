@@ -7,7 +7,6 @@ DEVELOPED BY : Rishabh Mukund
     GitHub   : https://github.com/Rishabh96M
 %}
 
-clear all;
 L=[47.3,63.6,100];  %Vector for link lengths 
 
 [X,Y,Z] = trag(60,30,10,133,100); %Computing the trajectory
