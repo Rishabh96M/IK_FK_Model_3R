@@ -9,9 +9,7 @@ DEVELOPED BY : Rishabh Mukund
 
 L=[47.3,63.6,100];  %Vector for link lengths 
 
-[X,Y,Z] = trag(60,30,10,133,100); %Computing the trajectory
-
-Y = Y + L(1);  %adding offset in Y axis
+[X,Y,Z] = circle(30,80,47,80,100); %Locus of End Effector or path to be traced
 
 %executing trajectory
 for i=1:length(Z)
