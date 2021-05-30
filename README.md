@@ -18,3 +18,14 @@ You change the link lengths vector according yo your requirments.
 13. [X,Y,Z] = circle(60,30,10,133,100);
 ```
 You can change the parameters for the trag function to modify the trajectory. If you wish to give a new trajectory function you can do so by replacing it with trag function, but please make sure the output of the function is the required format.
+
+## C++ Implementation
+
+files:
+forward_kinematics.cpp
+inverse_kinematics.cpp
+read_files.cpp
+
+have been implemented for C++ language
+
+
